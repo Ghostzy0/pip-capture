@@ -57,6 +57,8 @@ The microphone permission is requested only from Start recording. Denial leaves 
 
 ## Status and help
 
+[FAQ](docs/FAQ.md) covers privacy, variants and migration limits. [Workflows](docs/WORKFLOWS.md) explains capture, local transcription, export and recovery.
+
 Read [CHANGELOG](CHANGELOG.md), [TESTING](TESTING.md), [PARITY](PARITY.md), [security](SECURITY.md) and [contributing](CONTRIBUTING.md). Setup trouble: check full Xcode selection, writable disk space, compatible speech weights, the chosen executable, and microphone consent. Keep source data backed up before testing an alpha upgrade.
 
 Maintained by [Ghostzy0](https://github.com/Ghostzy0). Code is [MIT](LICENSE); upstream and font notices are preserved separately. [WhisperNotes](https://github.com/reidemeister94/whisper-notes) is the open-source foundation reference; [Mem](https://get.mem.ai/features/voice) and [Voicenotes](https://help.voicenotes.com/en/articles/11161004-how-to-use-voicenotes-on-mac) are independent workflow references. No affiliation or endorsement is implied.
