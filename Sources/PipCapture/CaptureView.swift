@@ -6,6 +6,7 @@ struct CaptureView: View {
     @ObservedObject var model: CaptureModel
     @AppStorage("lookTheme") private var lookTheme = "paper"
     @AppStorage("lookMode") private var lookMode = "light"
+    @FocusState private var libraryFocused: Bool
     @AppStorage("recorderCollapsed") private var recorderCollapsed = false
     @Environment(\.colorScheme) private var scheme
     var body: some View {
@@ -132,6 +133,7 @@ struct CaptureView: View {
             } else {
                 List(selection: $model.selectedID) {
                     ForEach(model.visibleNotes) { note in
+                        let selected = model.selectedID == note.id
                         VStack(alignment: .leading, spacing: CaptureTheme.small) {
                             HStack(alignment: .firstTextBaseline) {
                                 Text(note.title).font(CaptureTheme.font(15, weight: .semibold)).lineLimit(2)
@@ -139,15 +141,15 @@ struct CaptureView: View {
                                 if model.edits[note.id] != nil { Image(systemName: "pencil.circle").accessibilityLabel("Unsaved changes") }
                                 if note.favourite { Image(systemName: "star.fill").accessibilityLabel("Favourite") }
                             }
-                            Text(note.body.isEmpty ? (note.audioFilename == nil ? "Text capture" : "Original audio saved") : note.body).font(CaptureTheme.font(13)).lineLimit(3).foregroundStyle(CaptureTheme.secondary(scheme))
+                            Text(note.body.isEmpty ? (note.audioFilename == nil ? "Text capture" : "Original audio saved") : note.body).font(CaptureTheme.font(13)).lineLimit(3).foregroundStyle(selected && libraryFocused ? Color.white : CaptureTheme.secondary(scheme))
                             HStack(spacing: CaptureTheme.small) {
                                 Text(note.createdAt.formatted(.dateTime.day().month(.abbreviated)))
                                 if note.audioFilename != nil { Label("Audio", systemImage: "waveform") }
                                 if !note.tags.isEmpty { Text(note.tags.map { "#\($0)" }.joined(separator: " ")).lineLimit(1) }
-                            }.font(CaptureTheme.font(11)).foregroundStyle(CaptureTheme.secondary(scheme))
-                        }.padding(.vertical, CaptureTheme.small).tag(note.id)
+                            }.font(CaptureTheme.font(11)).foregroundStyle(selected && libraryFocused ? Color.white : CaptureTheme.secondary(scheme))
+                        }.foregroundStyle(selected && libraryFocused ? Color.white : CaptureTheme.ink(scheme, oat: lookTheme == "oat")).padding(.vertical, CaptureTheme.small).tag(note.id)
                     }
-                }.listStyle(.plain).scrollContentBackground(.hidden)
+                }.listStyle(.plain).scrollContentBackground(.hidden).focused($libraryFocused)
             }
         }.background(CaptureTheme.canvas(scheme, oat: lookTheme == "oat"))
     }

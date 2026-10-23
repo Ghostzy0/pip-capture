@@ -33,3 +33,11 @@ whisper.cpp231638a0717b7822784297e5980965ffcec05810 and MIT ggml-small.bin SHA25
 | 07-baseline-real-engine-test |9.15 |893190144 |
 
 Metrics are raw `/usr/bin/time -l` invocation reports on a shared host. Warmup, concurrency and different thread defaults prevent comparative speed claims. Wrapper CPU time is not a full child/GPU energy measurement. Energy and real microphone resource use remain unmeasured. Child jobs finished and the shared model hash was unchanged.
+
+## Qualification patch2 / separate replica
+
+Final Core0.1.0-alpha.2 and Plus0.2.0-alpha.2 source passed42shared tests. All four packages passed signature verification and their own non-UI configuration diagnostic, checking actual name/bundleID/storage/version/theme/extras flags. The separate Capture Replica0.1.0-alpha.1 also built and passed signature/configuration checks with com.pipreps.capture.replica and its own Capture Replica storage folder. These are executable bundle checks, not native UI acceptance.
+
+The last native slice exercised alpha1 Pip Plus tagfilter, idle recorder collapse and CmdOptionR expansion, and Pip Core tag editing/CmdS save. No microphone started. It exposed selected-row contrast under a purple macOS accent. Patch2 corrects focused/unfocused text colors in source; its final rendered contrast is pending. Computer-use disconnected while opening Settings and failed to reconnect after a reset, so neutral/replica, dark/Oat, minimumwidth and remaining assistive/native workflows remain unverified. Owned apps were stopped and no new grants were requested. Downloadable binary release is withheld pending this UI gate; source remains experimental.
+
+One63-sample Plus navigation segment reported median0% CPU with a43.7% launch/interaction peak and maximum154144KiB RSS. This mixes startup/interaction/idle; it is not a recording/energy benchmark or efficiency claim. Core samples were interrupted and are not reported.

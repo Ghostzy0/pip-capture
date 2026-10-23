@@ -4,7 +4,15 @@ import CaptureCore
 
 // Reproducible file-fed checks use the same packaged engine path as the UI.
 let arguments = CommandLine.arguments
-if arguments.count == 6 && arguments[1] == "--transcribe-file" {
+if arguments.count == 2 && arguments[1] == "--print-configuration" {
+    let edition = AppEdition.current
+    let report: [String: Any] = ["edition": edition.rawValue, "name": AppEdition.displayName,
+        "bundleID": Bundle.main.bundleIdentifier ?? "", "storageName": edition.storageName,
+        "version": AppEdition.displayVersion, "isPip": edition.isPip, "hasExtras": edition.hasExtras,
+        "isReplica": AppEdition.isReplica, "repositoryURL": AppEdition.repositoryURL]
+    do { let data = try JSONSerialization.data(withJSONObject: report, options: [.sortedKeys]); print(String(decoding: data, as: UTF8.self)); exit(0) }
+    catch { fputs("Configuration could not be encoded.\n", stderr); exit(1) }
+} else if arguments.count == 6 && arguments[1] == "--transcribe-file" {
     let audio = URL(fileURLWithPath: arguments[2]), executable = URL(fileURLWithPath: arguments[3]), weights = URL(fileURLWithPath: arguments[4]), output = URL(fileURLWithPath: arguments[5])
     Task {
         do {

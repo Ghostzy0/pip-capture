@@ -95,7 +95,7 @@ struct CaptureSettings: View {
                             pathRow("Speech tool", path: executable) { chooseFile { executable = $0 } }
                             pathRow("Speech weights", path: weights) { chooseFile { weights = $0 } }
                             Text("Nothing is downloaded or sent automatically. See the setup guide for verified installation steps.").font(CaptureTheme.font(12)).foregroundStyle(.secondary)
-                            Link("Open speech setup guide", destination: URL(string: "https://github.com/Ghostzy0/pip-capture/blob/main/docs/AI-SETUP.md")!)
+                            Link("Open speech setup guide", destination: URL(string: AppEdition.repositoryURL + "/blob/main/docs/AI-SETUP.md")!)
                             DisclosureGroup("Advanced", isExpanded: $showAdvanced) {
                                 TextField("Whisper language code (auto, en, fr…)", text: $language).textFieldStyle(.roundedBorder).accessibilityLabel("Whisper language code")
                                 Text("Advanced: whisper.cpp executable and compatible model files run locally. Only choose a tool you trust.").font(CaptureTheme.font(12)).foregroundStyle(.secondary)
@@ -154,11 +154,11 @@ struct CaptureAbout: View {
     var body: some View {
         VStack(spacing: CaptureTheme.inset) {
             PipPebble(busy: false)
-            Text(AppEdition.current.name).font(CaptureTheme.font(26, weight: .semibold))
-            Text("\(AppEdition.current.version) · Experimental").font(CaptureTheme.font(13)).foregroundStyle(.secondary)
+            Text(AppEdition.displayName).font(CaptureTheme.font(26, weight: .semibold))
+            Text("\(AppEdition.displayVersion) · Experimental").font(CaptureTheme.font(13)).foregroundStyle(.secondary)
             Text("A local home for voice and text. Keep the original, edit the note, and find the source again.").multilineTextAlignment(.center)
             Text("Built by Ghostzy0. Original local implementation, informed by the MIT WhisperNotes foundation. No affiliation with Mem or Voicenotes.").font(CaptureTheme.font(12)).foregroundStyle(.secondary).multilineTextAlignment(.center)
-            Link("Source, setup and known limits", destination: URL(string: "https://github.com/Ghostzy0/pip-capture")!)
+            Link("Source, setup and known limits", destination: URL(string: AppEdition.repositoryURL)!)
             Text("Audio stays on your Mac. Speech files are optional and separately installed. Recognition can make mistakes. This build is ad-hoc signed, not notarised.").font(CaptureTheme.font(12)).foregroundStyle(.secondary).multilineTextAlignment(.center)
             Button("Done") { dismiss() }.buttonStyle(CaptureButtonStyle(primary: true)).keyboardShortcut(.cancelAction)
         }.padding(CaptureTheme.large).frame(width: 440)

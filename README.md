@@ -2,9 +2,11 @@
 
 A local macOS inbox for voice, imported audio and text. Keep the original recording, edit a note, organise it with folders and tags, then return to the source or export your work.
 
-**Experimental alpha: Core0.1.0-alpha.1 / Plus0.2.0-alpha.1.** Original native SwiftUI app. No account, telemetry or hosted core service. Full Mem/Voicenotes equivalence is not claimed. Microphone recording requires macOS consent. Local transcription requires separately installed whisper.cpp and compatible weights; neither is downloaded automatically.
+**Experimental alpha: Core0.1.0-alpha.2 / Plus0.2.0-alpha.2.** Original native SwiftUI app. No account, telemetry or hosted core service. Full Mem/Voicenotes equivalence is not claimed. Microphone recording requires macOS consent. Local transcription requires separately installed whisper.cpp and compatible weights; neither is downloaded automatically.
 
 ## Four app variants
+
+The canonical primary-reference Neutral Core recreation is being separated into [Capture Replica](https://github.com/Ghostzy0/pip-capture-replica). Its signed-in reference/layout fidelity remains incomplete. The neutral Core configuration here is retained as an original comparison for reproducibility; it is not proof of a faithful Voicenotes recreation.
 
 All four use one local engine and the same note format. Separate app IDs and storage folders let them coexist without rewriting each other's library.
 
