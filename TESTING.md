@@ -11,8 +11,8 @@
 | Earlier native Pip text workflow |Synthetic note create/edit/save, folder/tags, favourite, source quote observed | Precedes latest visible-action/folder/tag fixes and Plus controls |
 | Actual microphone record/pause/resume/save |Pending | No grant changed during current qualification |
 | Final four-variant native UI/accessibility |Pending | Dark/Oat, minimumwidth, keyboard, reducedmotion and VoiceOver need exact package evidence |
-| Real local file-fed speech |In progress | No recognition quality claim before result inspection |
-| Clean public checkout |Pending | Source export review alone is insufficient |
+| Real local file-fed speech |Passed direct engine, packaged Pip CLI and comparison test with unchanged source hash |One synthetic voice/11.679s file; microphone/general accuracy separate |
+| Clean public checkout |42 shared tests,141 comparison tests(one optional skip), all four and comparison packages passed |Fresh history/export; native acceptance separate |
 
 The42-test suite includes original-audio preservation, corrected/original transcript separation, old-index compatibility, malformed-index preservation, safe atomic storage, concurrent writers, purge rollback/restart, draft recovery, retention/edit races, source-linked recall, worker cancellation/timeout/stale-result rejection, AVFoundation conversion, and safe crash-workspace cleanup. Cleanup preserves live speech children, uncertain launch states, reused/unknown PIDs, unmarked directories and symlinks. Edition tests cover isolated identities and composable Plus filters; Core ignores extras.
 
