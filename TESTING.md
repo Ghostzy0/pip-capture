@@ -2,11 +2,11 @@
 
 ## 24 October 2026 candidate fixes
 
-Core0.1.0-alpha.3 / Plus0.2.0-alpha.3 passed49 shared tests, zero failures/skips (25 storage,5 model,12 audio/worker,7 edition). New regressions use real temporary files with one exact unlink failure injected after a successful note commit; retries/reopen preserve one recovered note and original bytes. Distinct recordings with identical bytes stay distinct, changed drafts remain distinct, missing/corrupt recovered audio preserves the source, and older indexes without optional recovery fields load.
+Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.3 passed 49 shared tests, zero failures/skips (25 storage, 5 model, 12 audio/worker, 7 edition). New regressions use real temporary files with one exact unlink failure injected after a successful note commit; retries/reopen preserve one recovered note and original bytes. Distinct recordings with identical bytes stay distinct, changed drafts remain distinct, missing/corrupt recovered audio preserves the source, and older indexes without optional recovery fields load.
 
 All4 custom bundles and the separate replica candidate built and passed their executable configuration diagnostics and strict ad-hoc signatures on the qualification host. Plus opens a new idle recorder expanded; Replica applies its existing appearance preference. Their changed native paths still need current-package observation. Clean exported-checkout results will be recorded separately before publication; no binary qualification follows from unit tests or packaging.
 
-The previous baseline and synthetic file-fed ASR results below are retained23October evidence for unchanged code; they were not redundantly rerun locally. These notes do not claim microphone, VoiceOver, faithful signed-in commercial workflows, notarisation or general accuracy acceptance.
+The previous baseline and synthetic file-fed ASR results below are retained 23 October evidence for unchanged code; they were not redundantly rerun locally. These notes do not claim microphone, VoiceOver, faithful signed-in commercial workflows, notarisation or general accuracy acceptance.
 
 23 October2026. Qualification host: Apple Silicon arm64, macOS27.0.1, Swift6.4, full Xcode. Deployment target macOS14; older OS/Intel runtime unverified.
 
@@ -44,7 +44,7 @@ Metrics are raw `/usr/bin/time -l` invocation reports on a shared host. Warmup, 
 
 ## Qualification patch2 / separate replica
 
-Final Core0.1.0-alpha.2 and Plus0.2.0-alpha.2 source passed42shared tests. All four packages passed signature verification and their own non-UI configuration diagnostic, checking actual name/bundleID/storage/version/theme/extras flags. The separate Capture Replica0.1.0-alpha.1 also built and passed signature/configuration checks with com.pipreps.capture.replica and its own Capture Replica storage folder. These are executable bundle checks, not native UI acceptance.
+Final Core 0.1.0-alpha.2 and Plus 0.2.0-alpha.2 source passed42shared tests. All four packages passed signature verification and their own non-UI configuration diagnostic, checking actual name/bundleID/storage/version/theme/extras flags. The separate Capture Replica 0.1.0-alpha.1 also built and passed signature/configuration checks with com.pipreps.capture.replica and its own Capture Replica storage folder. These are executable bundle checks, not native UI acceptance.
 
 The last native slice exercised alpha1 Pip Plus tagfilter, idle recorder collapse and CmdOptionR expansion, and Pip Core tag editing/CmdS save. No microphone started. It exposed selected-row contrast under a purple macOS accent. Patch2 corrects focused/unfocused text colors in source; its final rendered contrast is pending. Computer-use disconnected while opening Settings and failed to reconnect after a reset, so neutral/replica, dark/Oat, minimumwidth and remaining assistive/native workflows remain unverified. Owned apps were stopped and no new grants were requested. Downloadable binary release is withheld pending this UI gate; source remains experimental.
 
