@@ -1,5 +1,13 @@
 # Test evidence
 
+## 24 October 2026 candidate fixes
+
+Core0.1.0-alpha.3 / Plus0.2.0-alpha.3 passed49 shared tests, zero failures/skips (25 storage,5 model,12 audio/worker,7 edition). New regressions use real temporary files with one exact unlink failure injected after a successful note commit; retries/reopen preserve one recovered note and original bytes. Distinct recordings with identical bytes stay distinct, changed drafts remain distinct, missing/corrupt recovered audio preserves the source, and older indexes without optional recovery fields load.
+
+All4 custom bundles and the separate replica candidate built and passed their executable configuration diagnostics and strict ad-hoc signatures on the qualification host. Plus opens a new idle recorder expanded; Replica applies its existing appearance preference. Their changed native paths still need current-package observation. Clean exported-checkout results will be recorded separately before publication; no binary qualification follows from unit tests or packaging.
+
+The previous baseline and synthetic file-fed ASR results below are retained23October evidence for unchanged code; they were not redundantly rerun locally. These notes do not claim microphone, VoiceOver, faithful signed-in commercial workflows, notarisation or general accuracy acceptance.
+
 23 October2026. Qualification host: Apple Silicon arm64, macOS27.0.1, Swift6.4, full Xcode. Deployment target macOS14; older OS/Intel runtime unverified.
 
 | Check | Executed result | Limits |

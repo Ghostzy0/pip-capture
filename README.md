@@ -2,7 +2,7 @@
 
 A local macOS inbox for voice, imported audio and text. Keep the original recording, edit a note, organise it with folders and tags, then return to the source or export your work.
 
-**Experimental alpha: Core0.1.0-alpha.2 / Plus0.2.0-alpha.2.** Original native SwiftUI app. No account, telemetry or hosted core service. Full Mem/Voicenotes equivalence is not claimed. Microphone recording requires macOS consent. Local transcription requires separately installed whisper.cpp and compatible weights; neither is downloaded automatically.
+**Experimental alpha: Core0.1.0-alpha.3 / Plus0.2.0-alpha.3.** Original native SwiftUI app. No account, telemetry or hosted core service. Full Mem/Voicenotes equivalence is not claimed. Microphone recording requires macOS consent. Local transcription requires separately installed whisper.cpp and compatible weights; neither is downloaded automatically.
 
 ## Four app variants
 
