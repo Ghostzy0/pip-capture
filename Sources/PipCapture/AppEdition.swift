@@ -40,5 +40,5 @@ enum AppEdition: String, CaseIterable, Sendable {
     var storageName: String { Self.isReplica && self == .neutralCore ? "Capture Replica" : name }
     var isPip: Bool { self == .pipCore || self == .pipPlus }
     var hasExtras: Bool { self == .neutralPlus || self == .pipPlus }
-    var version: String { hasExtras ? "0.2.0-alpha.3" : "0.1.0-alpha.3" }
+    var version: String { hasExtras ? "0.2.0-alpha.4" : "0.1.0-alpha.3" }
 }

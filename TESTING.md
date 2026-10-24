@@ -1,5 +1,13 @@
 # Test evidence
 
+## Plus alpha.4 candidate — 24 October 2026
+
+The first alpha.4 layout (clean export `a1463d602054a59fa596878ae942daa668715f84`) passed all 49 shared tests and all four package/configuration/ad-hoc-signature checks. Its native pixel review **failed** at 2400×1520: Start recording was partly clipped. A 900×650 native result was not achieved. These checks and pixels apply only to that earlier layout.
+
+The revised containment source has `CaptureView.swift` SHA-256 `cab8ed2ad69a076007ba17af07d2fb529387a4d15ac1cb58336c3d78a4089448`. Independent source review found no blocking source-level regression and explicitly leaves layout acceptance to native pixels. The matching revised implementation passed all 49 shared tests (zero failures/skips) and four local package/configuration/ad-hoc-signature checks. Exact-head public CI and native pixel review at 1200×760 and 900×650 remain pending; those local results do not establish a clean public build or rendered acceptance. The declared 900×600 minimum-size behavior also remains a native check. No microphone started. Core remains 0.1.0-alpha.3; Plus remains a held 0.2.0-alpha.4 candidate.
+
+Official Voicenotes for Mac 2.3.7 build 102 was directly observed navigating Home → bundled Welcome example detail → Back to Home. This confirms those visible navigation steps only. The separate signed-in Voicenotes web observation in Brave remains version-unverified and historical; it does not establish native app parity. Only bundled example content was inspected. Reference pixels remain private and are excluded from this repository.
+
 ## 24 October 2026 candidate fixes
 
 Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.3 passed 49 shared tests, zero failures/skips (25 storage, 5 model, 12 audio/worker, 7 edition). New regressions use real temporary files with one exact unlink failure injected after a successful note commit; retries/reopen preserve one recovered note and original bytes. Distinct recordings with identical bytes stay distinct, changed drafts remain distinct, missing/corrupt recovered audio preserves the source, and older indexes without optional recovery fields load.
@@ -28,7 +36,7 @@ The pinned WhisperNotes original compiled in13.59s and passed127 original tests;
 
 Three independent technical/UI/release reviews found and drove fixes. A later independent Plus source review found active-recording presentation and filter-empty copy issues; final corrected source passed the42-test package checkpoint. Source review is distinct from rendered/native acceptance.
 
-Reference Mem/Voicenotes workflows remain documented rather than account-tested. Official Voicenotes2.3.7 was observed only at Welcome/sign-in; no signup or terms were accepted. Complete competitor equivalence, human transcription accuracy, network isolation tracing, full VoiceOver, macOS14/Intel and stable release readiness remain unverified.
+Most Mem/Voicenotes workflows remain documented. Direct native observation of Voicenotes for Mac 2.3.7 build 102 confirms only Home → bundled Welcome example detail → Back to Home; recording, upload/transcription and generative workflows were not exercised. Complete competitor equivalence, human transcription accuracy, network isolation tracing, full VoiceOver, macOS14/Intel and stable release readiness remain unverified.
 
 ## Pinned speech integration
 
