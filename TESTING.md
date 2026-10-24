@@ -1,5 +1,13 @@
 # Test evidence
 
+## Plus alpha.4 candidate — 24 October 2026
+
+The changed private source passed all 49 shared tests (zero failures/skips) and all four package/configuration/ad-hoc-signature checks. Core remains 0.1.0-alpha.3; Plus is 0.2.0-alpha.4. The embedded presentation reuses the same actions outside the bounded permission/error scroller; independent source review found no action/state regression. These are source/package checks, not visible-action acceptance. Clean exported-checkout and exact-head CI results will be recorded separately.
+
+The prior alpha.3 native screenshot failed the visible-Start criterion at 1200×760: the button was present only in AX below the viewport. Its reopened expanded state was observed, but that was insufficient for usability acceptance. Current alpha.4 pixels at 1200×760 and 900×650 are pending. No microphone started. Replica Settings hit a CUA native-pipe closure; appearance remains unverified, not diagnosed as an app crash.
+
+Signed-in reference Home was observed in the Voicenotes web app in Brave, with version unverified and stock tutorial content only. That observation does not establish the native Mac 2.3.7 Home or workflow parity. No private notes were opened or reference pixels stored.
+
 ## 24 October 2026 candidate fixes
 
 Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.3 passed 49 shared tests, zero failures/skips (25 storage, 5 model, 12 audio/worker, 7 edition). New regressions use real temporary files with one exact unlink failure injected after a successful note commit; retries/reopen preserve one recovered note and original bytes. Distinct recordings with identical bytes stay distinct, changed drafts remain distinct, missing/corrupt recovered audio preserves the source, and older indexes without optional recovery fields load.
