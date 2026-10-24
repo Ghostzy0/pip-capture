@@ -1,10 +1,10 @@
 # Pip Capture
 
-**Plus source candidate: 0.2.0-alpha.4.** Native alpha.3 pixel review found its expanded recorder could clip Start below the viewport. This candidate introduces a compact embedded layout; current native pixel qualification is still pending. Core remains 0.1.0-alpha.3. See [issue 4](https://github.com/Ghostzy0/pip-capture/issues/4) and [test evidence](TESTING.md).
+**Plus source candidate: 0.2.0-alpha.4.** The first alpha.4 layout failed native pixel review at 2400×1520: Start recording was partly clipped. A revised embedded layout is now a source candidate; the matching implementation passed 49 tests and four local package checks; exact-head public CI and native pixels at 1200×760 and 900×650 remain pending. Core remains 0.1.0-alpha.3. See [issue 4](https://github.com/Ghostzy0/pip-capture/issues/4) and [test evidence](TESTING.md).
 
 A local macOS inbox for voice, imported audio and text. Keep the original recording, edit a note, organise it with folders and tags, then return to the source or export your work.
 
-**Experimental source: Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.4 candidate.** Original native SwiftUI app. No account, telemetry or hosted core service. Full Mem/Voicenotes equivalence is not claimed. Microphone recording requires macOS consent. Local transcription requires separately installed whisper.cpp and compatible weights; neither is downloaded automatically.
+**Experimental source: Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.4 candidate, pending the checks above.** Original native SwiftUI app. No account, telemetry or hosted core service. Full Mem/Voicenotes equivalence is not claimed. Microphone recording requires macOS consent. Local transcription requires separately installed whisper.cpp and compatible weights; neither is downloaded automatically.
 
 ## Four app variants
 

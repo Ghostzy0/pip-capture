@@ -2,7 +2,7 @@
 
 ## Plus 0.2.0-alpha.4 candidate — 24 October 2026
 
-Native alpha.3 pixel review found Start recording below the expanded footer viewport, despite its presence in the accessibility tree. The embedded Plus presentation now reserves a compact intrinsic footer and keeps shared actions outside the bounded permission/error scroller. Core retains its full modal presentation and version 0.1.0-alpha.3. Source review found no action/state regression; current build and native pixel qualification are separate gates. No binary or native-visibility pass is implied by this candidate.
+The first alpha.4 layout failed native pixel review at 2400×1520 because Start recording was partly clipped; a 900×650 result was not achieved. The revised source candidate moves the compact Plus footer below the flexible split view and bounds the sidebar with scrolling. Independent source review found no blocking regression. The revised implementation passed 49 shared tests and all four local package/configuration/signature checks. Exact-head public CI and native pixel review at 1200×760 and 900×650 remain pending. Core remains 0.1.0-alpha.3. No binary or native-visibility pass is implied.
 
 ## Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.3 — 24 October 2026 candidate
 

@@ -2,11 +2,11 @@
 
 ## Plus alpha.4 candidate — 24 October 2026
 
-The changed private source passed all 49 shared tests (zero failures/skips) and all four package/configuration/ad-hoc-signature checks. Core remains 0.1.0-alpha.3; Plus is 0.2.0-alpha.4. The embedded presentation reuses the same actions outside the bounded permission/error scroller; independent source review found no action/state regression. These are source/package checks, not visible-action acceptance. A clean exported checkout at `a1463d602054a59fa596878ae942daa668715f84` also passed all 49 tests and all four package/configuration/ad-hoc-signature checks. Later evidence-only documentation updates preserve that implementation. Exact-head public CI is a separate gate.
+The first alpha.4 layout (clean export `a1463d602054a59fa596878ae942daa668715f84`) passed all 49 shared tests and all four package/configuration/ad-hoc-signature checks. Its native pixel review **failed** at 2400×1520: Start recording was partly clipped. A 900×650 native result was not achieved. These checks and pixels apply only to that earlier layout.
 
-The prior alpha.3 native screenshot failed the visible-Start criterion at 1200×760: the button was present only in AX below the viewport. Its reopened expanded state was observed, but that was insufficient for usability acceptance. Current alpha.4 pixels at 1200×760 and 900×650 are pending. No microphone started. Replica Settings hit a CUA native-pipe closure; appearance remains unverified, not diagnosed as an app crash.
+The revised containment source has `CaptureView.swift` SHA-256 `cab8ed2ad69a076007ba17af07d2fb529387a4d15ac1cb58336c3d78a4089448`. Independent source review found no blocking source-level regression and explicitly leaves layout acceptance to native pixels. The matching revised implementation passed all 49 shared tests (zero failures/skips) and four local package/configuration/ad-hoc-signature checks. Exact-head public CI and native pixel review at 1200×760 and 900×650 remain pending; those local results do not establish a clean public build or rendered acceptance. The declared 900×600 minimum-size behavior also remains a native check. No microphone started. Core remains 0.1.0-alpha.3; Plus remains a held 0.2.0-alpha.4 candidate.
 
-Signed-in reference Home was observed in the Voicenotes web app in Brave, with version unverified and stock tutorial content only. That observation does not establish the native Mac 2.3.7 Home or workflow parity. No private notes were opened or reference pixels stored.
+Official Voicenotes for Mac 2.3.7 build 102 was directly observed navigating Home → bundled Welcome example detail → Back to Home. This confirms those visible navigation steps only. The separate signed-in Voicenotes web observation in Brave remains version-unverified and historical; it does not establish native app parity. Only bundled example content was inspected. Reference pixels remain private and are excluded from this repository.
 
 ## 24 October 2026 candidate fixes
 
@@ -36,7 +36,7 @@ The pinned WhisperNotes original compiled in13.59s and passed127 original tests;
 
 Three independent technical/UI/release reviews found and drove fixes. A later independent Plus source review found active-recording presentation and filter-empty copy issues; final corrected source passed the42-test package checkpoint. Source review is distinct from rendered/native acceptance.
 
-Reference Mem/Voicenotes workflows remain documented rather than account-tested. Official Voicenotes2.3.7 was observed only at Welcome/sign-in; no signup or terms were accepted. Complete competitor equivalence, human transcription accuracy, network isolation tracing, full VoiceOver, macOS14/Intel and stable release readiness remain unverified.
+Most Mem/Voicenotes workflows remain documented. Direct native observation of Voicenotes for Mac 2.3.7 build 102 confirms only Home → bundled Welcome example detail → Back to Home; recording, upload/transcription and generative workflows were not exercised. Complete competitor equivalence, human transcription accuracy, network isolation tracing, full VoiceOver, macOS14/Intel and stable release readiness remain unverified.
 
 ## Pinned speech integration
 
