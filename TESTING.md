@@ -2,7 +2,7 @@
 
 ## Plus alpha.4 candidate — 24 October 2026
 
-The changed private source passed all 49 shared tests (zero failures/skips) and all four package/configuration/ad-hoc-signature checks. Core remains 0.1.0-alpha.3; Plus is 0.2.0-alpha.4. The embedded presentation reuses the same actions outside the bounded permission/error scroller; independent source review found no action/state regression. These are source/package checks, not visible-action acceptance. Clean exported-checkout and exact-head CI results will be recorded separately.
+The changed private source passed all 49 shared tests (zero failures/skips) and all four package/configuration/ad-hoc-signature checks. Core remains 0.1.0-alpha.3; Plus is 0.2.0-alpha.4. The embedded presentation reuses the same actions outside the bounded permission/error scroller; independent source review found no action/state regression. These are source/package checks, not visible-action acceptance. A clean exported checkout at `a1463d602054a59fa596878ae942daa668715f84` also passed all 49 tests and all four package/configuration/ad-hoc-signature checks. Later evidence-only documentation updates preserve that implementation. Exact-head public CI is a separate gate.
 
 The prior alpha.3 native screenshot failed the visible-Start criterion at 1200×760: the button was present only in AX below the viewport. Its reopened expanded state was observed, but that was insufficient for usability acceptance. Current alpha.4 pixels at 1200×760 and 900×650 are pending. No microphone started. Replica Settings hit a CUA native-pipe closure; appearance remains unverified, not diagnosed as an app crash.
 
