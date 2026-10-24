@@ -35,3 +35,8 @@ No. Capture is an original implementation with declared workflow references. A s
 ## Is this ready for important production recordings?
 
 It is an experimental alpha. See [test evidence](../TESTING.md), [workflow gaps](../PARITY.md) and [security guidance](../SECURITY.md). Ad-hoc builds are not Developer ID signed or notarised. Back up source recordings and verify exports before relying on an alpha.
+
+
+## What happens when recording recovery cannot remove its draft?
+
+A recovered note is committed before the source draft is removed. If cleanup fails, the app keeps the source and reports cleanup pending; retrying uses the same draft identity and content to finish safely. Separate draft filenames remain separate recordings even if their bytes match. Missing or changed saved audio prevents source deletion. Back up the complete library with the app closed before upgrades or rollback; older versions can discard newer optional recovery metadata when rewriting a note, so finish pending recovery cleanup before editing the same library in an older build.
