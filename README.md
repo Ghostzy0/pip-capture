@@ -2,7 +2,7 @@
 
 A local macOS inbox for voice, imported audio and text. Keep the original recording, edit a note, organise it with folders and tags, then return to the source or export your work.
 
-**Experimental source only:** Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.4 candidate (unreleased). Binaries are withheld. A native save-shortcut failure is tracked in [issue6](https://github.com/Ghostzy0/pip-capture/issues/6); the current correction passes50 local tests and all four package checks, but needs a native keyboard recheck and final exact-head CI. Earlier native frames show Start at default and OS quarter-window sizes; exact900×650 remains unrun. See [test evidence](TESTING.md) and [draft PR5](https://github.com/Ghostzy0/pip-capture/pull/5).
+**Experimental source only:** Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.4 candidate (unreleased). Binaries are withheld. A native save-shortcut failure is tracked in [issue6](https://github.com/Ghostzy0/pip-capture/issues/6); the current correction passes 50 local tests and all four package checks, but needs a native keyboard recheck and final exact-head CI. Earlier native frames show Start at default and OS quarter-window sizes; exact 900×650 remains unrun. See [test evidence](TESTING.md) and [draft PR5](https://github.com/Ghostzy0/pip-capture/pull/5).
 
 No account, telemetry or hosted core service. Microphone recording needs macOS consent; recording acceptance remains unverified. Local transcription needs separately installed whisper.cpp and compatible weights; neither is downloaded automatically. Full Mem/Voicenotes equivalence is not claimed.
 
