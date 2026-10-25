@@ -2,7 +2,7 @@
 
 A local macOS inbox for voice, imported audio and text. Keep the original recording, edit a note, organise it with folders and tags, then return to the source or export your work.
 
-**Experimental source only:** Core 0.1.0-alpha.4 and Plus 0.2.0-alpha.4 are unreleased candidates; binaries are withheld. The versioned Neutral Core and separate Replica candidates passed bounded native keyboard-save/reopen cases. Other variants and broader workflows remain unqualified. See [test evidence](TESTING.md), [custom draft PR5](https://github.com/Ghostzy0/pip-capture/pull/5) and [Replica draft PR3](https://github.com/Ghostzy0/pip-capture-replica/pull/3); current exact-head CI status is tracked in PR5.
+**Experimental source only:** Core 0.1.0-alpha.4 and Plus 0.2.0-alpha.4 are unreleased candidates; binaries are withheld. The versioned Neutral Core and separate Replica candidates passed bounded native keyboard-save/reopen cases. The current Pip Plus package also passed bounded Markdown export, text import/source recall, tag/search filtering, favourite and appearance-persistence cases. Broader workflows remain unqualified. See [test evidence](TESTING.md), [custom draft PR5](https://github.com/Ghostzy0/pip-capture/pull/5) and [Replica draft PR3](https://github.com/Ghostzy0/pip-capture-replica/pull/3); current exact-head CI status is tracked in PR5.
 
 No account, telemetry or hosted core service. Microphone recording needs macOS consent; recording acceptance remains unverified. Local transcription needs separately installed whisper.cpp and compatible weights; neither is downloaded automatically. Full Mem/Voicenotes equivalence is not claimed.
 

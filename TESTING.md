@@ -1,5 +1,23 @@
 # Test evidence
 
+## Current Plus native R5/R6 — 25 October 2026
+
+Current Pip Plus 0.2.0-alpha.4/build4 executable SHA-256 `c80fda773cab4e1c6b3120ff32aa23ed22843d424eb819bcf29c1868c41e878f` uses the fourteen Swift files at public pin `7aa353b`. The existing synthetic note exported through the native picker into a newly prepared temporary folder whose exact URL was observed before confirmation. The generated 567-byte Markdown retained title, body, both tags, negation, amount and distinct times. This passes that one export case. An earlier unread synthetic export remains unverified and was not accessed; the earlier inconclusive attempt is preserved below.
+
+A separate 149-byte UTF-8 fictional fixture imported through the observed picker, displayed correct title/body/amount/negation/times, and survived normal quit/reopen. Source recall returned a quoted note paragraph for its distinctive words; clicking the result opened that note. A unique absent token showed No matching source found. Recall matches any query term: an initial negative control containing a token already in the note was unsuitable and is not an app failure. This is quoted word retrieval, not generative Ask or phrase-only semantics. Parent direct observation and independent saved-evidence review agree with these bounded cases.
+
+The current idle recorder showed complete Start at actual 1800×1276 and 2400×1520 image pixels. Edge drags did not establish an exact 900×650 native frame; the size gate remains open, with no logical-point inference. R5/R6 did not exercise Start, microphone/grants, Settings, audio, minimum-size acceptance, performance or full reference/accessibility acceptance. Owned apps were normally quit and exact processes absent after each bounded slice.
+
+Clean public CI [40182042512](https://github.com/Ghostzy0/pip-capture/actions/runs/40182042512) passed at `2ee701bbb04d14e1aa31eeba07d1d579f7d83c0f`: 50 shared tests with zero failures/skips, four packages/configuration/strict-signature checks, 141 comparison tests with one optional-engine skip, and comparison packaging. Later native-evidence documentation changes do not alter source; that CI remains tied to its exact recorded head. The exact source archive restored all 105 tracked files. No rebuild or repeated local suite was needed for R5/R6. Candidates remain draft/unreleased; binaries withheld.
+
+### Current Plus R7 — filter and favourite composition
+
+With two existing fictional notes, adding a favourite and saving tags made the imported note appear under its unique tag. Intersecting that tag with a query matching only the other note produced No matching captures. Clear filters emptied the query, restored All tags and both rows. Favourites showed both starred notes; removing the imported favourite left only the original one. After normal quit/reopen, the imported body/tags and final favourite-off state remained, with only the original note under Favourites. The intermediate on state was observed before removal, not separately reopened. Parent observation and independent saved AX/pixel review support only this bounded case. No new keyboard-save claim, recording, settings, import/export, size, resource or full-accessibility acceptance follows.
+
+### Current Plus R8 — appearance persistence and restoration
+
+A Look-only Settings slice switched the original Paper/Light selection to Oat/Dark. The actual main surface and idle recorder rendered dark; Start was not pressed. Normal quit/reopen retained the dark Oat surface and selected Settings values. Paper/Light selections and the main surface were then restored before the final normal quit; no third reopen is claimed. Both Settings opens worked in this slice, without diagnosing earlier computer-use transport failures. No speech files, links, retention, storage cleanup, system settings, permissions or microphone were touched. This covers only the described appearance case, with no contrast, Device-mode, reduced-motion, VoiceOver, exact-size or all-theme/variant acceptance inferred.
+
 ## Version identity update — 25 October 2026
 
 The shared editor-save fix has version-only candidates: Capture Neutral Core and Pip Capture Core are `0.1.0-alpha.4` / build 4; Neutral Plus and Pip Capture Plus remain `0.2.0-alpha.4` / build 4; the Replica candidate is `0.1.0-alpha.3` / build 3. Bundle IDs, storage identities and data format are unchanged. Published Core/Plus alpha.3 and Replica alpha.2 tags/releases remain unchanged. The Replica source pin and static verifier pass; these candidates are unreleased and binaries remain withheld.
@@ -10,7 +28,7 @@ On the versioned source, the seven existing AppEdition tests passed with zero fa
 
 The versioned Neutral Core package passed one synthetic text workflow. Tested executable SHA-256: `6befe0b678b2b22acf4e30b43cdbdaa514bd5daff76413e4a979e33173e01974`, with sources matching public `7aa353b`. Starting with an empty inbox, a new note received a title via the focused title field; ⌘S retained the title and showed the saved state. Editing the body and adding two synthetic tags, then pressing ⌘S again, showed saved state before normal quit; reopening the same package/library retained those fields. Favourite remained at its default off state; it was not toggled, and trash/restore was not tested. Four native JPG/AX captures were saved across the tested Neutral Core and Replica cases; parent and independent saved-evidence review confirm the bounded result. This result covers only the described Neutral Core workflow, not Plus, all variants or full acceptance.
 
-The newly versioned Plus metadata artifact remains native-unrun. R3 is a separate earlier Plus result and is not transferred to new metadata artifacts. R4 did not exercise microphone, permission, settings, audio, recording, window-size, or export workflows.
+At the R4 checkpoint the newly versioned Plus artifact was native-unrun; later R5/R6 evidence is recorded above. R3 is a separate earlier Plus result and is not transferred to new metadata artifacts. R4 did not exercise microphone, permission, settings, audio, recording, window-size, or export workflows.
 
 ## Plus alpha.4 candidate — updated 25 October 2026
 
