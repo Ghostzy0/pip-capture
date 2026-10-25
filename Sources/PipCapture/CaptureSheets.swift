@@ -5,6 +5,7 @@ import CaptureCore
 struct RecordingSheet: View {
     @ObservedObject var model: CaptureModel
     @ObservedObject var recorder: CaptureRecorder
+    @Environment(\.colorScheme) private var scheme
     @Environment(\.dismiss) private var dismiss
     var embedded = false
     var onClose: (() -> Void)?
@@ -66,7 +67,7 @@ struct RecordingSheet: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             Text("Audio stays on this Mac. Pause whenever you need to.")
-                .font(CaptureTheme.font(13)).foregroundStyle(.secondary)
+                .font(CaptureTheme.font(13)).foregroundStyle(CaptureTheme.secondary(scheme))
             if recorder.state == .requestingPermission {
                 HStack(spacing: CaptureTheme.small) {
                     Text("Waiting for microphone access.").font(CaptureTheme.font(13))
