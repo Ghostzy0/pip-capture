@@ -2,11 +2,11 @@
 
 A local macOS inbox for voice, imported audio and text. Keep the original recording, edit a note, organise it with folders and tags, then return to the source or export your work.
 
-**Experimental source only:** Core 0.1.0-alpha.4 / Plus 0.2.0-alpha.4 candidates are unreleased; binaries are withheld. A bounded native ⌘S save/reopen/trash/restore pass succeeded for one earlier Plus package and synthetic note; it is not acceptance for the newly versioned candidates or other variants. Core and Replica now have version-only candidates; Replica 0.1.0-alpha.3 still needs separate source-pin/backport review. The latest Plus frame shows Start at 1800×1276; exact 900×650 was not explicitly set, so the original size gate remains open. Export correctness is unverified. Published Core/Plus alpha.3 and Replica alpha.2 tags are unchanged. See [test evidence](TESTING.md) and [draft PR5](https://github.com/Ghostzy0/pip-capture/pull/5); exact-head CI is pending.
+**Experimental source only:** Core 0.1.0-alpha.4 and Plus 0.2.0-alpha.4 are unreleased candidates; binaries are withheld. The versioned Neutral Core and separate Replica candidates passed bounded native keyboard-save/reopen cases. Other variants and broader workflows remain unqualified. See [test evidence](TESTING.md), [custom draft PR5](https://github.com/Ghostzy0/pip-capture/pull/5) and [Replica draft PR3](https://github.com/Ghostzy0/pip-capture-replica/pull/3); exact-head CI is pending.
 
 No account, telemetry or hosted core service. Microphone recording needs macOS consent; recording acceptance remains unverified. Local transcription needs separately installed whisper.cpp and compatible weights; neither is downloaded automatically. Full Mem/Voicenotes equivalence is not claimed.
 
-The version-only candidates identify the shared editor-save correction: Core `0.1.0-alpha.4` (build 4), Plus remains `0.2.0-alpha.4` (build 4), and Replica `0.1.0-alpha.3` (build 3). Published Core/Plus alpha.3 and Replica alpha.2 tags remain unchanged. Replica source-pin/backport review is separate and pending.
+The version-only candidates identify the shared editor-save correction: Core `0.1.0-alpha.4` (build 4), Plus remains `0.2.0-alpha.4` (build 4), and Replica `0.1.0-alpha.3` (build 3). Published Core/Plus alpha.3 and Replica alpha.2 tags remain unchanged. The Replica source pin and static verifier are prepared in its separate draft.
 
 ## Four app variants
 
