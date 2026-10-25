@@ -2,7 +2,11 @@
 
 A local macOS inbox for voice, imported audio and text. Keep the original recording, edit a note, organise it with folders and tags, then return to the source or export your work.
 
-**Experimental alpha: Core 0.1.0-alpha.3 / Plus 0.2.0-alpha.3.** Original native SwiftUI app. No account, telemetry or hosted core service. Full Mem/Voicenotes equivalence is not claimed. Microphone recording requires macOS consent. Local transcription requires separately installed whisper.cpp and compatible weights; neither is downloaded automatically.
+**Experimental source only:** Core 0.1.0-alpha.4 and Plus 0.2.0-alpha.4 are unreleased candidates; binaries are withheld. Bounded native text-save/reopen cases are recorded for Neutral Core, Pip Core, Neutral Plus, Pip Plus and the separate Replica candidate; scenarios differ by edition. Pip Plus also has bounded Markdown export, text import/source recall, tag/search filtering, favourite and appearance-persistence evidence. Broader workflows remain unqualified. See [test evidence](TESTING.md), [custom draft PR5](https://github.com/Ghostzy0/pip-capture/pull/5) and [Replica draft PR3](https://github.com/Ghostzy0/pip-capture-replica/pull/3); current exact-head CI status is tracked in PR5.
+
+No account, telemetry or hosted core service. Microphone recording needs macOS consent; recording acceptance remains unverified. Local transcription needs separately installed whisper.cpp and compatible weights; neither is downloaded automatically. Full Mem/Voicenotes equivalence is not claimed.
+
+The version-only candidates identify the shared editor-save correction: Core `0.1.0-alpha.4` (build 4), Plus remains `0.2.0-alpha.4` (build 4), and Replica `0.1.0-alpha.3` (build 3). Published Core/Plus alpha.3 and Replica alpha.2 tags remain unchanged. The Replica source pin and static verifier are prepared in its separate draft.
 
 ## Four app variants
 
