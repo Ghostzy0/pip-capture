@@ -224,7 +224,7 @@ struct NoteEditor: View {
                         .background(CaptureTheme.surface(scheme, oat: false), in: RoundedRectangle(cornerRadius: CaptureTheme.radius))
                         .overlay(RoundedRectangle(cornerRadius: CaptureTheme.radius).stroke(CaptureTheme.line(scheme))).accessibilityLabel("Editable note")
                     HStack(spacing: CaptureTheme.small) {
-                        Button("Save changes") { _ = model.save(note) }.buttonStyle(CaptureButtonStyle(primary: true)).keyboardShortcut("s").disabled(model.edits[id] == nil)
+                        Button("Save changes") { _ = model.saveSelected() }.buttonStyle(CaptureButtonStyle(primary: true)).disabled(model.edits[id] == nil)
                         Text(model.edits[id] == nil ? "Saved on this Mac" : "Unsaved changes").font(CaptureTheme.font(12)).foregroundStyle(CaptureTheme.secondary(scheme))
                         Spacer()
                     }
