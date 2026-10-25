@@ -1,8 +1,14 @@
 # Test evidence
 
+## Current Pip Core and Neutral Plus native R10 — 25 October 2026
+
+Two current alpha.4 candidates passed bounded synthetic text create, visible-Save, normal-quit/reopen cases, with independent review of the frozen evidence. Pip Capture Core 0.1.0-alpha.4/build 4 executable SHA-256 is `c5ea44c12c28b168d0345bc7b2b7fd60f7f80935c142566e1ee2fb8ab2b43745`; Capture Neutral Plus 0.2.0-alpha.4/build 4 is `d0b79a1bd73d6aec66792c8f0a2e017f2df12cb3f555156b131310aafee8fbbc`. Each case created one fictional note with a distinct title, body, and two tags, used the visible Save button, then reopened the same library with those values retained. The notes included a negated instruction, amount, and distinct time. No keyboard-save result is implied.
+
+Neutral Plus showed its complete labelled idle Start control, duration 00:00 and input level 0; Start was not pressed. Core had no Plus tag-filter control. Initial empty Inbox was directly observed by the parent, but no saved initial-state capture exists for independent confirmation. Three Core Tab steps only partially exposed focus: step 1 was not identified, followed by Tags and Editable note. This is not full focus traversal, VoiceOver, or calibrated contrast acceptance. R10 did not test favourites, trash, import/export, microphone/audio, Settings, size, or broad accessibility. Exact 900×650 remains tool-blocked; recording remains deferred owner-mediated. These cases add no new build, source-suite, package or CI result. Candidates remain unreleased and binaries withheld.
+
 ## Current Plus native R5/R6 — 25 October 2026
 
-Current Pip Plus 0.2.0-alpha.4/build4 executable SHA-256 `c80fda773cab4e1c6b3120ff32aa23ed22843d424eb819bcf29c1868c41e878f` uses the fourteen Swift files at public pin `7aa353b`. The existing synthetic note exported through the native picker into a newly prepared temporary folder whose exact URL was observed before confirmation. The generated 567-byte Markdown retained title, body, both tags, negation, amount and distinct times. This passes that one export case. An earlier unread synthetic export remains unverified and was not accessed; the earlier inconclusive attempt is preserved below.
+Current Pip Plus 0.2.0-alpha.4/build 4 executable SHA-256 `c80fda773cab4e1c6b3120ff32aa23ed22843d424eb819bcf29c1868c41e878f` uses the fourteen Swift files at public pin `7aa353b`. The existing synthetic note exported through the native picker into a newly prepared temporary folder whose exact URL was observed before confirmation. The generated 567-byte Markdown retained title, body, both tags, negation, amount and distinct times. This passes that one export case. An earlier unread synthetic export remains unverified and was not accessed; the earlier inconclusive attempt is preserved below.
 
 A separate 149-byte UTF-8 fictional fixture imported through the observed picker, displayed correct title/body/amount/negation/times, and survived normal quit/reopen. Source recall returned a quoted note paragraph for its distinctive words; clicking the result opened that note. A unique absent token showed No matching source found. Recall matches any query term: an initial negative control containing a token already in the note was unsuitable and is not an app failure. This is quoted word retrieval, not generative Ask or phrase-only semantics. Parent direct observation and independent saved-evidence review agree with these bounded cases.
 
@@ -17,6 +23,14 @@ With two existing fictional notes, adding a favourite and saving tags made the i
 ### Current Plus R8 — appearance persistence and restoration
 
 A Look-only Settings slice switched the original Paper/Light selection to Oat/Dark. The actual main surface and idle recorder rendered dark; Start was not pressed. Normal quit/reopen retained the dark Oat surface and selected Settings values. Paper/Light selections and the main surface were then restored before the final normal quit; no third reopen is claimed. Both Settings opens worked in this slice, without diagnosing earlier computer-use transport failures. No speech files, links, retention, storage cleanup, system settings, permissions or microphone were touched. This covers only the described appearance case, with no contrast, Device-mode, reduced-motion, VoiceOver, exact-size or all-theme/variant acceptance inferred.
+
+### Current Plus R9 — malformed import and compact keyboard control
+
+One owned 36-byte invalid-UTF-8 text fixture produced a visible import error with a labelled Dismiss message button. The two existing fictional notes remained; dismissal and normal quit/reopen left the same two notes, with no failed-import record. This covers that malformed-text case only, not all import errors or a successful retry.
+
+Idle Collapse showed Ready to record, duration 00:00 and a labelled Expand control. Actual Command-Option-R expanded the idle controls; Start was never pressed. Three Tab steps exposed list → Search captures → list under unchanged system keyboard settings. This supports the shortcut and recorded labels, with no complete button traversal, VoiceOver or screen-reader-announcement pass inferred. Parent observation and independent saved-evidence review agree.
+
+A read-only process sample during this post-presentation import/error/idle workflow recorded 51 samples for one owned PID: median/max CPU 0.0%/27.8%, median/max RSS 137,008/151,280 KiB. Sampling stopped when that app exited. These are shared-host raw navigation/error/idle observations, not startup, recording, energy, comparative efficiency or heavy-audio performance acceptance. No source suite/build/CI was repeated.
 
 ## Version identity update — 25 October 2026
 
